@@ -1,8 +1,9 @@
 import { useSelector } from "react-redux";
 import { Gif } from "@/root/types/Gif.type";
 import { GifItem } from "../gif-item/GifItem";
-import { promotionPrice } from "@/root/constants/common.constant";
+//import { promotionPrice } from "@/root/constants/common.constant";
 import { selectGifs } from "@/root/redux/selectors/gif-selector/gif.selector";
+import { promotionPrice } from "@/root/constants/common.constants";
 
 export const GifList = () => {
   const gifFoundList = useSelector(selectGifs);
