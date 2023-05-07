@@ -1,5 +1,3 @@
-//updated
-//import { startSetGif } from "@/root/redux/thunks/gif.thunk";
 import { startSetGif } from "@/root/redux/thunks/gif-thunk/gif.thunk";
 import { useDispatch } from "react-redux";
 
@@ -12,7 +10,7 @@ function SearchBar() {
     if (!searchTerm) {
       searchTerm="dogs";
     }
-    console.log(searchTerm);
+    
     
     dispatch(startSetGif(searchTerm));
   };
@@ -49,7 +47,6 @@ function SearchBar() {
           id="default-search"
           className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Search for dogs, GIFs dogs or maybe other GIFs related with dogs"
-          required
         />
         <button
           type="submit"

@@ -10,11 +10,11 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Gif Market</title>
       </Head>
-    <div className="dark:bg-slate-800 ">
+    <div className="dark:bg-slate-800 p-4 ">
       <h1 className="text-center dark:text-white  font-bold text-4xl py-12">
         Gif Market
       </h1>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-4">
         <SearchBar />
       </div>
       <div className="flex justify-center">

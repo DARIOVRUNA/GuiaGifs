@@ -8,7 +8,7 @@ export const ApplicationStore = configureStore({
   reducer: {
     gifStore: gifReducer,
   //  cartStore: cartReducer,
-  }, 
+  },
 });
 
 export type RootState = ReturnType<typeof ApplicationStore.getState>;
